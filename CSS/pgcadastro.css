@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+}
+
+.mb-3{
+    width: 45%;
+    text-align: center;
+    align-items: center;
+    float: left;
+    margin-right: 27%;
+    margin-left: 27%;
+}
+
+.btn{
+    text-align: center;
+    align-items: center;
+}
