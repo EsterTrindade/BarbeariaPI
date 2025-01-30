@@ -8,6 +8,10 @@ h1{
     text-align: center;
 }
 
+h6{
+    text-align: center;
+}
+
 .mb-3{
     width: 45%;
     text-align: center;
@@ -17,7 +21,51 @@ h1{
     margin-left: 27%;
 }
 
-.btn{
+.btncadastro {
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    padding: 1rem 6rem;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 20px;
     text-align: center;
     align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #ff0000;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.btncadastro:hover {
+    background-color: #fff;
+    color: #000;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255,0,0,0.3);
+}
+
+.btncadastro::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    width: 200px;
+    height: 150px;
+    background-color: #fff;
+    
+    border-radius: 50%;
+    transition: all 0.7s;
+    z-index: -1;
+}
+
+.btncadastro:hover::before {
+    top: -30px;
+    left: -30px;
 }

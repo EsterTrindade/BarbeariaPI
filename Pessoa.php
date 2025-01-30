@@ -3,13 +3,13 @@
 
     class Pessoa{
         protected string $nome;
-        protected string $telefone;
+        protected string $email;
 
-        public function __construct(string $nome, string $telefone)
+        public function __construct(string $nome, string $email)
         {
             //Instanciar
             $this->nome = $nome;
-            $this->telefone = $telefone;
+            $this->email = $email;
         }// Fim do construtor (que serve para instanciar as variaveis)
 
         public function __get(string $variavel):mixed
@@ -25,7 +25,7 @@
         public function imprimir():string
         {
             return "<br>Nome: ".$this->nome.
-                   "<br>Telefone: ".$this->telefone;
+                   "<br>E-mail: ".$this->email;
         }//Fim do Método
 
     }// Fim classe pessoa

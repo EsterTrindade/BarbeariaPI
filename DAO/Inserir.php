@@ -4,12 +4,12 @@
     use PHP\Modelo\DAO\Conexao;
 
     class inserir{
-        function cadastrarCliente(Conexao $conexao, string $nome, string $email, string $telefone, string $senha)
+        function cadastrarCliente(Conexao $conexao, string $nome, string $email, int $telefone, string $dataNasc, string $senha)
         {
             try{
                 $conn = $conexao->conectar();//Abrir banco de dados.
-                $sql = "insert into cliente(codigo, nome, telefone, senha)
-                values('$email', '$nome', '$telefone', '$senha')";
+                $sql = "insert into cliente(IDcliente, nome, email, telefone, dataNasc, senha)
+                values('', '$nome', '$email', '$telefone', '$dataNasc', '$senha')";
                 $result = mysqli_query($conn, $sql);
                 mysqli_close($conn);
                 //Verificar o resultado
